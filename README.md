@@ -1,4 +1,4 @@
-# Flipper Zero BadUSB HID Demo for Defensive Awareness
+# Flipper Zero BadUSB HID Demo
 
 > Defensive research and awareness only. Use responsibly and with authorization.
 
